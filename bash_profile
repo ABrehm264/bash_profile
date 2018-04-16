@@ -12,7 +12,6 @@ alias chef-rspec='chef exec rspec'
 code () {
     VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $*
 }
-alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 
 # Resets local and origin master to look like upstream.
 alias git-reset-master='git fetch upstream && git checkout master && git reset --hard upstream/master && git push'
