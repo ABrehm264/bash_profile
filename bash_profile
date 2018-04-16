@@ -4,8 +4,6 @@
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-export EDITOR=nano
-
 alias ll="ls -al"
 alias cgrep="grep --color=always"
 
