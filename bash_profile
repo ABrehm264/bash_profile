@@ -23,5 +23,5 @@ alias git-submodule-update='git submodule update --init --recursive && git submo
 PS1="\[$COLOR_WHITE\]\u@\h \W"          # basename of pwd
 PS1+="\[\$(git_color)\]"        # colors git status
 PS1+="\$(git_branch)"           # prints current branch
-PS1+="\[$COLOR_BLUE\]\$\[$COLOR_RESET\] "   # '#' for root, else '$'
+PS1+="\[$COLOR_BLUE\] \$\[$COLOR_RESET\] "   # '#' for root, else '$'
 export PS1
