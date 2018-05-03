@@ -4,6 +4,10 @@ code () {
     VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $*
 }
 
+get_sha_256 () {
+  curl "$1" | openssl dgst -sha256 | awk -F' ' '{ print $2 }'
+}
+
 # Chef
 alias chef-rspec='chef exec rspec'
 
