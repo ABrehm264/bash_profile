@@ -20,7 +20,7 @@ docker_ssh () {
 alias flush-dns="sudo killall -HUP mDNSResponder;echo 'DNS cache has been flushed'"
 alias ipconfig="ifconfig | grep \"inet \" | grep -v 127.0.0.1 | cut -d\  -f2"
 alias fix-missioncontrol="killall Dock"
-alias stupid-ssh="ssh -o PreferredAuthentications=keyboard-interactive,password -o PubkeyAuthentication=no"
+alias ssh-noauth="ssh -o PreferredAuthentications=keyboard-interactive,password -o PubkeyAuthentication=no"
 
 # Quicker navigation
 alias ..="cd .."
